@@ -1,0 +1,14 @@
+.appInput {
+  position: relative;
+
+  min-width: 20rem;
+
+  overflow: hidden;
+  
+  padding: 1rem;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: white;
+}

@@ -1,0 +1,24 @@
+.loginPageContainer {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formLogin {
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  height: 100%;
+
+  margin-top: -25%;
+}
+
+.formLogin > svg {
+  margin-bottom: 1.5rem;
+
+  color: var(--color-primary);
+}

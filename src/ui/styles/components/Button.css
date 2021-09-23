@@ -1,0 +1,28 @@
+.appBtn {
+  position: relative;
+
+  min-width: 20rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: .8rem;
+  padding: .75rem;
+
+  overflow: hidden;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: var(--color-primary);
+}
+
+.appBtn svg {
+  margin-left: .3rem;
+  margin-bottom: 0;
+}

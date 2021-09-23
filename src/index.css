@@ -7,5 +7,30 @@
   margin: 0;
   padding: 0;
 
-  font-family: "Montserrat";
+  box-sizing: border-box;
+  
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --color-background: #292929;
+  --color-primary: #FFCE00;
+  --color-text-error: #EB2D2D;
+}
+
+html {
+  overflow-y: hidden;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  
+  background: var(--color-background);
+}
+
+body div:first-child {
+  position: relative;
+  
+  height: 100vh;
 }
