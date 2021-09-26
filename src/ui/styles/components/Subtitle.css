@@ -1,0 +1,26 @@
+.appSubtitle {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.topic {
+  width: 0.6rem;
+  height: 3rem !important;
+
+  margin-left: 0;
+
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  
+  background-color: var(--color-primary);
+}
+
+.subtitle {
+  margin-left: 1.3rem;
+  margin-top: .6rem;
+
+  color: white;
+}
+

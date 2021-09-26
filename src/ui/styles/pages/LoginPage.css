@@ -5,20 +5,65 @@
 }
 
 .formLogin {
-  position: absolute;
-  top: 50%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
   height: 100%;
+  top: 50%;
 
   margin-top: -25%;
 }
 
-.formLogin > svg {
-  margin-bottom: 1.5rem;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form > svg {
+  margin-bottom: 1.25rem;
 
   color: var(--color-primary);
+}
+
+form > div span {
+  display: none;
+}
+
+.inputContainer {
+  padding: 0;
+
+  background-color: rgba(216, 213, 213, 0.938);
+  border-radius: 6px;
+
+  overflow: auto;
+}
+
+.inputContainer .appInput {
+  width: 100%;
+
+  padding: calc(.75rem - 2px);
+
+  font-size: 1.25rem;
+
+  border: 2px solid transparent;
+  border-radius: 6px;
+
+  background-color: white;
+  box-shadow: 1px 1px 4px 1px white;
+  
+  outline: none;
+}
+
+.inputContainer .feedback {
+  padding: .5rem;
+
+  font-size: 1rem;
+
+  background-color: transparent;
+}
+
+form > .inputContainer.loginError span {
+  display: block;
+
+  margin-top: .25rem;
+  
+  color: var(--color-text-error);
 }

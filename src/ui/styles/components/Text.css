@@ -1,0 +1,9 @@
+.appText {
+  margin-left: 2rem;
+
+  color: white;
+}
+
+.appText + .appText {
+  margin-top: 0.5rem;
+} 

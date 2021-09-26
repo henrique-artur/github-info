@@ -1,7 +1,6 @@
 import Follower from "../domain/models/Follower";
 import Repos from "../domain/models/Repos";
 import User from "../domain/models/User";
-import ApiResponse from "../domain/Response/ApiResponse";
 import FollowerResponse from "../domain/Response/FollowerResponse";
 import ReposResponse from "../domain/Response/ReposResponse";
 import UserResponse from "../domain/Response/UserResponse";
