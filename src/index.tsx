@@ -5,6 +5,7 @@ import UserProvider from './ui/contexts/UserContext';
 import './index.css';
 import ReposProvider from './ui/contexts/ReposContext';
 import FollowersProvider from './ui/contexts/FollowersContext';
+import { registerServiceWorker } from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,3 +20,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+registerServiceWorker()
