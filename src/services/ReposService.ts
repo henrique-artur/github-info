@@ -1,7 +1,7 @@
 import Repos from "../core/domain/models/Repos";
 import ServiceResponse from "../core/domain/Response/ServiceResponse";
 import { responseToRepos } from "../core/utils/ResponseUtils";
-import ResposApi from "../data/api/ReposApi";
+import ReposApi from "../data/api/ReposApi";
 import ReposAbstractService from "./abstraction/ReposAbstractService";
 
 class ReposService extends ReposAbstractService {
@@ -9,7 +9,7 @@ class ReposService extends ReposAbstractService {
     const result: ServiceResponse<Repos[]> = {}
     
     try {
-      const response = await new ResposApi().show(username)
+      const response = await new ReposApi().show(username)
       
       result.data = responseToRepos(response)
     } catch(err) {

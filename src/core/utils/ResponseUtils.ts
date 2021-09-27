@@ -32,10 +32,12 @@ export function responseToRepos(response: ReposResponse[]): Repos[] {
   const result: Repos[] = []
 
   for (let index = 0; index < response.length; index++) {
-    result[index].name = response[index].name
-    result[index].description = response[index].description
-    result[index].stargazersCount = response[index].stargazers_count
-    result[index].private = response[index].private
+    result.push({
+      name: response[index].name,
+      description: response[index].description,
+      stargazersCount: response[index].stargazers_count,
+      private: response[index].private
+    })
   }
 
   return result
@@ -45,8 +47,10 @@ export function responseToFollowers(response: FollowerResponse[]): Follower[] {
   const result: Follower[] = []
 
   for (let index = 0; index < response.length; index++) {
-    result[index].login = response[index].login
-    result[index].avatarUrl = response[index].avatar_url 
+    result.push({
+      login: response[index].login,
+      avatarUrl: response[index].avatar_url,
+    }) 
   }
 
   return result
