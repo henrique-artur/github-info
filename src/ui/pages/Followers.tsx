@@ -11,15 +11,17 @@ function Followers(): JSX.Element {
   const { followers } = useContext(FollowersContext)
   const { user } = useContext(UserContext)
 
+  document.title = `Seguidores - ${user?.login}`
+
   return (
     <>
       <div className="container">
         <Header label={`${user?.followers} Seguidores`}/>
         <div className="scroll-followers">
           {followers && (
-            followers.map((follow) => (
+            followers.map((follow, index) => (
               <>
-                <Subtitle key={follow.login} prefixIcon={<img alt="avatar-follows" src={follow.avatarUrl}/>}
+                <Subtitle key={index} prefixIcon={<img alt="avatar-follows" src={follow.avatarUrl}/>}
                 label={follow.login} />
                 <hr />
               </>

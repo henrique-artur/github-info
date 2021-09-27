@@ -8,7 +8,7 @@ interface HeaderProps {
 
 function Header({label}: HeaderProps): JSX.Element {
   return (
-    <div className="header">
+    <div className="appHeader">
       <Link to="/user"> <IoMdArrowRoundBack size={32}/> </Link>
         <div className="labelHeader">
           <span>{label}</span>

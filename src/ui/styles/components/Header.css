@@ -1,9 +1,10 @@
-.header {
-  height: 10% !important;
+.appHeader {
+  height: 12% !important;
 
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 
   margin-bottom: 3rem;
 
@@ -13,14 +14,14 @@
   background-color: black;
 }
 
-.header a > svg {
+.appHeader a > svg {
   margin-left: 1rem;
   margin-top: 0;
 
   color: white;
 }
 
-.header > .labelHeader {
+.appHeader > .labelHeader {
   margin: 0 auto;
   width: 50%;
 

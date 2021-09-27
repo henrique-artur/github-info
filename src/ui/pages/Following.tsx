@@ -11,10 +11,12 @@ function Following(): JSX.Element {
   const { following } = useContext(FollowersContext)
   const { user } = useContext(UserContext)
 
+  document.title = `Seguindo - ${user?.login}`
+
   return (
     <>
       <div className="container">
-        <Header label={`${user?.followers} Seguidores`}/>
+        <Header label={`${user?.following} Seguidores`}/>
         <div className="scroll-followers">
           {following && (
             following.map((follow) => (

@@ -13,8 +13,8 @@ function ListingRepos(): JSX.Element {
     <>
       {repos && (repos.map((item, index) => (
         <>
-          <Subtitle key={index} label={item.name} />
-          <Text key={index}  label={item.description} />
+          <Subtitle label={item.name} />
+          <Text label={item.description} />
           <div key={index} className="repoInfo">
             <div className="stars">
               <AiOutlineStar size={30} />

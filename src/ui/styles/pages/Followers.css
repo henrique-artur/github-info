@@ -3,9 +3,11 @@
 }
 
 .scroll-followers {
+  height: 80%;
+
   margin-bottom: 1.5rem;
-  
-  overflow: visible;
+
+  overflow-y: scroll;
 }
 
 hr {

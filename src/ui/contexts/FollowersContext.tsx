@@ -24,7 +24,6 @@ function FollowersProvider({ children }: FollowersProviderProps): JSX.Element {
 
     if (response.data) {
       setFollowers(response.data)
-    } else if (response.error) {
     }
   }
 
@@ -33,7 +32,6 @@ function FollowersProvider({ children }: FollowersProviderProps): JSX.Element {
 
     if (response.data) {
       setFollowing(response.data)
-    } else if (response.error) {
     }
   }
 

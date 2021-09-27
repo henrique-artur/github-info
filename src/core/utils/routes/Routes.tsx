@@ -25,11 +25,11 @@ function CustomRoute({isPrivate, ...rest}: CustomRouteProps) {
 function Routes() {
   return (
     <Switch>
-      <CustomRoute exact path="/" component={Login}/>
-      <CustomRoute isPrivate exact path="/repos" component={Repos}/>
-      <CustomRoute isPrivate exact path="/user" component={Home}/>
-      <CustomRoute isPrivate exact path="/followers" component={Followers}/>
-      <CustomRoute isPrivate exact path="/following" component={Following}/>
+      <CustomRoute exact path="/" component={Login} />
+      <CustomRoute isPrivate exact path="/repos" component={Repos} />
+      <CustomRoute isPrivate exact path="/user" component={Home} />
+      <CustomRoute isPrivate exact path="/followers" component={Followers} />
+      <CustomRoute isPrivate exact path="/following" component={Following} />
     </Switch>
   )
 }

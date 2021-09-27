@@ -32,7 +32,6 @@ class FollowersService extends FollowersAbstractService {
 
     return result
   }
-
 }
 
 export default FollowersService

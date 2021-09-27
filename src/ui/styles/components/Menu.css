@@ -3,7 +3,7 @@
   bottom: 0;
  
   width: 100%;
-  max-height: 7rem !important;
+  max-height: 10% !important;
 
   padding: 0.8rem;
 
@@ -36,10 +36,10 @@
   color: black;
 }
 
-.tab a > span {
-  margin-top: 0.3rem;
-}
-
 div + .divMenu {
   margin-top: 1.5rem;
+}
+
+.tab a > span {
+  margin-top: 0.3rem;
 }

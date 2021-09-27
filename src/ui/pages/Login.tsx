@@ -8,6 +8,8 @@ import { UserContext } from '../contexts/UserContext';
 import './../styles/pages/LoginPage.css';
 
 function Login() {
+  document.title = `Login`
+  
   let className = 'loginError'
 
   const { login } = useContext(UserContext)

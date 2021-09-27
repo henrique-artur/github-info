@@ -1,18 +1,20 @@
+import { useContext, useEffect } from 'react'
 import { IoMdExit } from 'react-icons/io'
+import { UserContext } from '../contexts/UserContext'
+import { ReposContext } from '../contexts/ReposContext'
+import { FollowersContext } from '../contexts/FollowersContext'
 import Subtitle from '../components/Subtitle'
 import Text from '../components/Text'
 import Menu from '../components/Menu'
-import { useContext, useEffect } from 'react'
-import { UserContext } from '../contexts/UserContext'
 import { Link } from 'react-router-dom'
-import { ReposContext } from '../contexts/ReposContext'
-import { FollowersContext } from '../contexts/FollowersContext'
 import '../styles/pages/Home.css'
 
 function Home(): JSX.Element {
-  const { user } = useContext(UserContext)
+  const { user, logoof } = useContext(UserContext)
   const { show } = useContext(ReposContext)
   const { indexFollowers, indexFollowing } = useContext(FollowersContext)
+
+  document.title = `Home - ${user?.login}`
 
   useEffect(() => {
     (async () =>{
@@ -30,7 +32,7 @@ function Home(): JSX.Element {
         await indexFollowing(user.login)
       }
     })();
-  })
+  }, [user])
 
   return (
     <div className="container">
@@ -38,7 +40,7 @@ function Home(): JSX.Element {
         <strong>{user?.login}</strong>
         <div className="exit">
           <span>
-            <Link to="/">Sair</Link>
+            <a href="/" onClick={() => logoof()}>Sair</a>
           </span>
           <IoMdExit size={23}/>
         </div>
@@ -51,19 +53,26 @@ function Home(): JSX.Element {
           <Subtitle label={user?.name ? user.name : user?.login}/>
           <Text label={user ? user.email : ''}/>
           <Text label={user? user.location : ''}/>
+          <Text label={user? user.company : ''}/>
         </div>
         <div className="cardsProfile">
           <div className="card">
-            <strong>{user?.followers}</strong>
-            <span>Seguidores</span>
+            <Link to="/followers">
+              <strong>{user?.followers}</strong>
+              <span>Seguidores</span>
+            </Link>
           </div>
           <div className="card">
-            <strong>{user?.following}</strong>
-            <span>Seguindo</span>
+            <Link to="/following">
+              <strong>{user?.following}</strong>
+              <span>Seguindo</span>
+            </Link>
           </div>
           <div className="card">
-            <strong>{user?.publicRepos}</strong>
-            <span>Repos</span>
+            <Link to="/repos">
+              <strong>{user?.publicRepos}</strong>
+              <span>Repos</span>
+            </Link>
           </div>
         </div>
         <div className="bio">

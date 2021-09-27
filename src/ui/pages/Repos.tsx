@@ -6,8 +6,9 @@ import { UserContext } from "../contexts/UserContext"
 import '../styles/pages/Repos.css'
 
 function Repos(): JSX.Element {
-
   const { user } = useContext(UserContext)
+
+  document.title = `Repos - ${user?.login}`
 
   return(
     <div className="container">
