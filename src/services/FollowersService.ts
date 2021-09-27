@@ -1,7 +1,7 @@
+import FollowersApi from "../data/api/FollowersApi";
+import { responseToFollowers } from "../core/utils/ResponseUtils";
 import Follower from "../core/domain/models/Follower";
 import ServiceResponse from "../core/domain/Response/ServiceResponse";
-import { responseToFollowers } from "../core/utils/ResponseUtils";
-import FollowersApi from "../data/api/FollowersApi";
 import FollowersAbstractService from "./abstraction/FollowersAbstractService";
 
 class FollowersService extends FollowersAbstractService {

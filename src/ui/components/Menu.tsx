@@ -1,7 +1,7 @@
-import { BiHome } from "react-icons/bi"
-import { FiGithub, FiUsers } from "react-icons/fi"
-import { Link } from "react-router-dom"
-import '../styles/components/Menu.css'
+import { Link } from "react-router-dom";
+import { BiHome } from "react-icons/bi";
+import { FiGithub, FiUsers } from "react-icons/fi";
+import '../styles/components/Menu.css';
 
 function Menu(): JSX.Element {
   return (

@@ -1,10 +1,10 @@
-import Button from '../components/Button';
-import UserDTO from '../../core/domain/dto/userDTO';
+import { useContext } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { GrFormNextLink } from 'react-icons/gr';
-import { useContext } from 'react';
 import { UserContext } from '../contexts/UserContext';
+import UserDTO from '../../core/domain/dto/userDTO';
+import Button from '../components/Button';
 import './../styles/pages/LoginPage.css';
 
 function Login() {

@@ -1,10 +1,10 @@
+import { useContext } from "react";
 import { AiOutlineStar } from "react-icons/ai";
 import { FiUnlock } from "react-icons/fi";
+import { ReposContext } from "../contexts/ReposContext";
 import Subtitle from "./Subtitle";
 import Text from "./Text";
 import '../styles/components/ListingRepos.css';
-import { useContext } from "react";
-import { ReposContext } from "../contexts/ReposContext";
 
 function ListingRepos(): JSX.Element {
   const { repos } = useContext(ReposContext)

@@ -1,6 +1,6 @@
-import { ReactNode, createContext, useState } from "react"
-import Follower from "../../core/domain/models/Follower"
-import FollowersService from "../../services/FollowersService"
+import { ReactNode, createContext, useState } from "react";
+import Follower from "../../core/domain/models/Follower";
+import FollowersService from "../../services/FollowersService";
 
 interface FollowersContextProps {
   followers: undefined | Follower[]

@@ -1,6 +1,6 @@
+import ClientAPI from "./ClientAPI";
 import UserResponse from "../../core/domain/Response/UserResponse";
 import UserAbstractApi from "./abstraction/UserAbstractApi";
-import ClientAPI from "./ClientAPI";
 
 class UserApi extends UserAbstractApi {
   async login(username: string): Promise<UserResponse> {

@@ -1,7 +1,7 @@
+import UserApi from "../data/api/UserApi";
+import { responseToUser } from "../core/utils/ResponseUtils";
 import User from "../core/domain/models/User";
 import ServiceResponse from "../core/domain/Response/ServiceResponse";
-import { responseToUser } from "../core/utils/ResponseUtils";
-import UserApi from "../data/api/UserApi";
 import UserAbstractServices from "./abstraction/UserAbstractService";
 
 class UserService extends UserAbstractServices {

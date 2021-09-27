@@ -1,5 +1,5 @@
-import { IoMdArrowRoundBack } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { IoMdArrowRoundBack } from "react-icons/io";
 import '../styles/components/Header.css';
 
 interface HeaderProps {

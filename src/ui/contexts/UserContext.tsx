@@ -1,7 +1,7 @@
-import { ReactNode, createContext, useState } from "react"
-import User from "../../core/domain/models/User"
-import history from "../../core/utils/routes/history"
-import UserService from "../../services/UserService"
+import { ReactNode, createContext, useState } from "react";
+import history from "../../core/utils/routes/history";
+import User from "../../core/domain/models/User";
+import UserService from "../../services/UserService";
 
 interface UserContextProps {
   user: undefined | User

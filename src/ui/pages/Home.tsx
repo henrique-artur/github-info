@@ -1,13 +1,13 @@
-import { useContext, useEffect } from 'react'
-import { IoMdExit } from 'react-icons/io'
-import { UserContext } from '../contexts/UserContext'
-import { ReposContext } from '../contexts/ReposContext'
-import { FollowersContext } from '../contexts/FollowersContext'
-import Subtitle from '../components/Subtitle'
-import Text from '../components/Text'
-import Menu from '../components/Menu'
-import { Link } from 'react-router-dom'
-import '../styles/pages/Home.css'
+import { useContext, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { IoMdExit } from 'react-icons/io';
+import { UserContext } from '../contexts/UserContext';
+import { ReposContext } from '../contexts/ReposContext';
+import { FollowersContext } from '../contexts/FollowersContext';
+import Subtitle from '../components/Subtitle';
+import Text from '../components/Text';
+import Menu from '../components/Menu';
+import '../styles/pages/Home.css';
 
 function Home(): JSX.Element {
   const { user, logoof } = useContext(UserContext)

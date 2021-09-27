@@ -1,6 +1,6 @@
-import { ReactNode, createContext, useState } from "react"
-import Repos from "../../core/domain/models/Repos"
-import ReposService from "../../services/ReposService"
+import { ReactNode, createContext, useState } from "react";
+import Repos from "../../core/domain/models/Repos";
+import ReposService from "../../services/ReposService";
 
 interface ReposContextProps {
   repos: undefined | Repos[]

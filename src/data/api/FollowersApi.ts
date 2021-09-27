@@ -1,6 +1,6 @@
+import ClientAPI from "./ClientAPI";
 import FollowerResponse from "../../core/domain/Response/FollowerResponse";
 import FollowersAbstractApi from "./abstraction/FollowersAbstractApi";
-import ClientAPI from "./ClientAPI";
 
 class FollowersApi extends FollowersAbstractApi {
   async indexFollowing(username: string): Promise<FollowerResponse[]> {
