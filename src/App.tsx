@@ -1,9 +1,12 @@
-import './App.css';
-import Home from './ui/pages/Home';
+import { Router } from 'react-router';
+import history from './core/utils/routes/history';
+import Routes from './core/utils/routes/Routes';
 
 function App() {
   return (
-    <Home />
+    <Router history={history}>
+      <Routes />
+    </Router>
   )
 }
 
