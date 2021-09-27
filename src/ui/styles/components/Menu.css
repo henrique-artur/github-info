@@ -1,0 +1,45 @@
+.divMenu {
+  position: sticky;
+  bottom: 0;
+ 
+  width: 100%;
+  max-height: 7rem !important;
+
+  padding: 0.8rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  
+  background: white;
+}
+
+.tab {
+  height: auto !important;
+}
+
+.divMenu > .tab a {
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-decoration: none;
+
+  color: black;
+}
+
+.tab a > span {
+  margin-top: 0.3rem;
+}
+
+div + .divMenu {
+  margin-top: 1.5rem;
+}

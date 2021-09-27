@@ -2,7 +2,7 @@ import { ReactNode, createContext, useState } from "react"
 import Repos from "../../core/domain/models/Repos"
 import ReposService from "../../services/ReposService"
 
-interface ReposContexProps {
+interface ReposContextProps {
   repos: undefined | Repos[]
   show: (username: string) => Promise<void>
 }
@@ -11,7 +11,7 @@ interface ReposProviderProps {
   children: ReactNode
 }
 
-const ReposContex = createContext({} as ReposContexProps)
+export const ReposContext = createContext({} as ReposContextProps)
 
 function ReposProvider({ children }: ReposProviderProps): JSX.Element {
   const [repos, setRepos] = useState<Repos[]>()
@@ -21,17 +21,16 @@ function ReposProvider({ children }: ReposProviderProps): JSX.Element {
 
     if (response.data) {
       setRepos(response.data)
-    } else if (response.error) {
     }
   }
 
   return (
-    <ReposContex.Provider value ={{
+    <ReposContext.Provider value ={{
       repos,
       show,
     }}>
       {children}
-    </ReposContex.Provider>
+    </ReposContext.Provider>
   )
 }
 

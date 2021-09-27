@@ -6,9 +6,11 @@ interface TextProps {
 
 function Text({label}: TextProps): JSX.Element {
   return (
-    <p className="appText">
-      {label}
-    </p>
+    <div className="appText">
+      <p>
+        {label}
+      </p>
+    </div>
   )
 }
 

@@ -1,11 +1,13 @@
 import { ReactNode, createContext, useState } from "react"
 import User from "../../core/domain/models/User"
+import history from "../../core/utils/routes/history"
 import UserService from "../../services/UserService"
 
 interface UserContextProps {
   user: undefined | User
   isAuth: undefined | boolean
   login: (username: string) => Promise<void> 
+  logoof: () => void
 }
 
 interface UserProviderProps {
@@ -24,7 +26,14 @@ function UserProvider({ children }: UserProviderProps): JSX.Element {
     if (response.data) {
       setUser(response.data)
       setIsAuth(true)
+      history.push('/user')
     }
+  }
+
+  function logoof() {
+    setIsAuth(false)
+    setUser(undefined)
+    history.push('/')
   }
 
   return (
@@ -32,6 +41,7 @@ function UserProvider({ children }: UserProviderProps): JSX.Element {
       user,
       isAuth,
       login,
+      logoof
     }}>
       {children}
     </UserContext.Provider>

@@ -1,14 +1,16 @@
 .loginPageContainer {  
+  position: absolute;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .formLogin {
-  height: 100%;
-  top: 50%;
+  position: relative;
+  top: 25%;
 
-  margin-top: -25%;
+  height: 50% !important;
 }
 
 form {

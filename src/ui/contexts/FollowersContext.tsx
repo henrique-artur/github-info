@@ -13,7 +13,7 @@ interface FollowersProviderProps {
   children: ReactNode
 }
 
-const FollowersContext = createContext({} as FollowersContextProps)
+export const FollowersContext = createContext({} as FollowersContextProps)
 
 function FollowersProvider({ children }: FollowersProviderProps): JSX.Element {
   const [followers, setFollowers] = useState<Follower[]>()
@@ -32,7 +32,7 @@ function FollowersProvider({ children }: FollowersProviderProps): JSX.Element {
     const response = await new FollowersService().indexFollowing(username)
 
     if (response.data) {
-      setFollowers(response.data)
+      setFollowing(response.data)
     } else if (response.error) {
     }
   }

@@ -1,3 +1,9 @@
+.container {
+  position: relative;
+
+  overflow-y: scroll;
+}
+
 .header {
   height: 17% !important;
 
@@ -9,9 +15,9 @@
   color: white;
 }
 
-.header > * {
+/* .header > * {
   margin-top: 1.2rem;
-}
+} */
 
 .header > strong {
   margin-left: 1.2rem;
@@ -22,6 +28,11 @@
 .exit {
   display: flex;
   flex-direction: row;
+}
+
+.exit span > a {
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .exit > svg {
@@ -43,4 +54,60 @@
 
   border: 2px solid white;
   border-radius: 50%;
+}
+
+.infoProfile {
+  position: relative;
+  top: 0;
+
+  max-height: 10rem !important;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-home {
+  height: 60% !important;
+
+  margin-bottom: 1.5rem;
+  
+  overflow: visible;
+}
+
+.cardsProfile {
+  position: relative;
+
+  top: auto;
+  
+  height: 7rem !important;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+
+  background-color: var(--color-background-card);
+}
+
+.cardsProfile > .card {
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+}
+
+.card strong {
+  font-size: 2.3rem;
+}
+
+.bio {
+  height: auto;
+
+  margin-top: 2.7rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
 }

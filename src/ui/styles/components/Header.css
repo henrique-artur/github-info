@@ -1,0 +1,29 @@
+.header {
+  height: 10% !important;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 3rem;
+
+  text-align: center;
+
+  color: white;
+  background-color: black;
+}
+
+.header a > svg {
+  margin-left: 1rem;
+  margin-top: 0;
+
+  color: white;
+}
+
+.header > .labelHeader {
+  margin: 0 auto;
+  width: 50%;
+
+  font-weight: bold;
+  font-size: 1.1rem;
+}

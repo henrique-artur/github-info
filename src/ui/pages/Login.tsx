@@ -3,11 +3,11 @@ import UserDTO from '../../core/domain/dto/userDTO';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { GrFormNextLink } from 'react-icons/gr';
-import './../styles/pages/LoginPage.css';
 import { useContext } from 'react';
 import { UserContext } from '../contexts/UserContext';
+import './../styles/pages/LoginPage.css';
 
-function LoginPage() {
+function Login() {
   let className = 'loginError'
 
   const { login } = useContext(UserContext)
@@ -18,7 +18,7 @@ function LoginPage() {
   }
 
   return (
-    <div className={"loginPageContainer"}>
+    <div className={"loginContainer"}>
       <div className={"formLogin"}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <AiOutlineGithub size={110} />
@@ -43,4 +43,4 @@ function LoginPage() {
   )
 }
 
-export default LoginPage
+export default Login

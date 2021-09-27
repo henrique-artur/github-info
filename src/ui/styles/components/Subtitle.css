@@ -1,5 +1,5 @@
 .appSubtitle {
-  position: relative;
+  height: auto !important;
 
   display: flex;
   flex-direction: row;
@@ -17,10 +17,29 @@
   background-color: var(--color-primary);
 }
 
+.prefixIcon > img{
+  width: 3.5rem;
+
+  margin-left: 1.3rem;
+  margin-right: 1.1rem;
+
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.sufixIcon {
+  margin: 0.5rem 1.2rem 0 auto;
+  color: white !important;
+}
+
 .subtitle {
   margin-left: 1.3rem;
   margin-top: .6rem;
 
   color: white;
+}
+
+.subtitle.username {
+  font-size: 0.9rem;
 }
 

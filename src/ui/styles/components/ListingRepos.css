@@ -1,0 +1,44 @@
+.repoInfo {
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 0.8rem;
+  margin-left: 1.9rem;
+  margin-right: 1.9rem;
+}
+
+.stars {
+  height: auto !important;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: var(--color-primary);
+}
+
+.stars p {
+  font-size: 1.3rem;
+  margin-left: 0.4rem;
+
+  color: white;
+}
+
+.locked {
+  color: green;
+}
+
+hr {
+  margin-top: 1.3rem;
+  margin-bottom: 1.5rem;
+  border-top: 0.2px solid #4d4b4b5a;
+}
+
+hr:last-child {
+  border: none;
+}

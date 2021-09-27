@@ -1,4 +1,6 @@
 .appText {
+  position: relative;
+
   margin-left: 2rem;
 
   color: white;

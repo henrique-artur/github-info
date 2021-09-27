@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+}
+
+.scroll {
+  height: 80% !important;
+
+  margin-bottom: 1.5rem;
+  
+  overflow: visible;
+}
